@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\corsa.jpg",
+      "PackagePath": "staticwebassets\\images\\corsa.jpg"
+    },
+    {
       "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\register.js",
       "PackagePath": "staticwebassets\\js\\register.js"
     },

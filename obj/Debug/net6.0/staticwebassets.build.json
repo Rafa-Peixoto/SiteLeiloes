@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "SjKgdQS5LPDnQX2GG/GAVNgQ4cTE+fJMeyQE27H0rWE=",
+  "Hash": "b9h1ghF5ntFo8mnNxFs06FjCalUitrkQ8Kt5mgs6lb8=",
   "Source": "SiteLeiloes",
   "BasePath": "_content/SiteLeiloes",
   "Mode": "Default",
@@ -34,6 +34,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\css\\register.css"
+    },
+    {
+      "Identity": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\corsa.jpg",
+      "SourceId": "SiteLeiloes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
+      "BasePath": "_content/SiteLeiloes",
+      "RelativePath": "images/corsa.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\corsa.jpg"
     },
     {
       "Identity": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\register.js",

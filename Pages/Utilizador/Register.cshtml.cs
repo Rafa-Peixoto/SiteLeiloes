@@ -1,9 +1,9 @@
-using Microsoft.AspNetCore.Mvc;
+Ôªøusing Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
-namespace SiteLeiloes.Pages
+namespace SiteLeiloes.Pages.Utilizador
 {
     public class RegisterModel : PageModel
     {
@@ -13,7 +13,7 @@ namespace SiteLeiloes.Pages
         public class InputModel
         {
             [Required]
-            [Display(Name = "Nome de usu·rio")]
+            [Display(Name = "Nome de usuario")]
             public string Username { get; set; }
 
             [Required]
@@ -28,7 +28,7 @@ namespace SiteLeiloes.Pages
 
             [DataType(DataType.Password)]
             [Display(Name = "Confirme a senha")]
-            [Compare("Password", ErrorMessage = "As senhas n„o correspondem.")]
+            [Compare("Password", ErrorMessage = "As senhas n–≥o correspondem.")]
             public string ConfirmPassword { get; set; }
         }
 
@@ -43,10 +43,10 @@ namespace SiteLeiloes.Pages
                 return Page();
             }
 
-            // Aqui vocÍ adicionaria a lÛgica para registrar o usu·rio
+            // Aqui voc–∫ adicionaria a l—Égica para registrar o usu–±rio
             // Por exemplo, adicionar ao seu banco de dados
 
-            // Depois de registrar com sucesso, redirecionar para a p·gina de login ou confirmaÁ„o
+            // Depois de registrar com sucesso, redirecionar para a p–±gina de login ou confirma–∑–≥o
             return RedirectToPage("Login");
         }
     }
