@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc.RazorPages;
 using System.ComponentModel.DataAnnotations;
 using System.Threading.Tasks;
 
-namespace SiteLeiloes.Pages.Utilizador
+namespace SiteLeiloes.Pages
 {
     public class RegisterModel : PageModel
     {
