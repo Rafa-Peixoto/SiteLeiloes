@@ -235,3 +235,7 @@ C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteL
 C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\obj\Debug\net6.0\SiteLeiloes.pdb
 C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\obj\Debug\net6.0\SiteLeiloes.genruntimeconfig.cache
 C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\obj\Debug\net6.0\ref\SiteLeiloes.dll
+C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\obj\Debug\net6.0\SiteLeiloes.RazorAssemblyInfo.cache
+C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\obj\Debug\net6.0\SiteLeiloes.RazorAssemblyInfo.cs
+C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\obj\Debug\net6.0\SiteLeiloes.sourcelink.json
+C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\bin\Debug\net6.0\SiteLeiloes.staticwebassets.runtime.json

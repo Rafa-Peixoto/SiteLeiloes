@@ -1,11 +1,58 @@
 {
   "Version": 1,
-  "Hash": "a/WxYM9TcUuYnY0NWUIPhNXsp5ZRNN1x2Fk3P6isa1E=",
+  "Hash": "SjKgdQS5LPDnQX2GG/GAVNgQ4cTE+fJMeyQE27H0rWE=",
   "Source": "SiteLeiloes",
   "BasePath": "_content/SiteLeiloes",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
-  "DiscoveryPatterns": [],
-  "Assets": []
+  "DiscoveryPatterns": [
+    {
+      "Name": "SiteLeiloes\\wwwroot",
+      "Source": "SiteLeiloes",
+      "ContentRoot": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
+      "BasePath": "_content/SiteLeiloes",
+      "Pattern": "**"
+    }
+  ],
+  "Assets": [
+    {
+      "Identity": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\register.css",
+      "SourceId": "SiteLeiloes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
+      "BasePath": "_content/SiteLeiloes",
+      "RelativePath": "css/register.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\register.css"
+    },
+    {
+      "Identity": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\register.js",
+      "SourceId": "SiteLeiloes",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
+      "BasePath": "_content/SiteLeiloes",
+      "RelativePath": "js/register.js",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\js\\register.js"
+    }
+  ]
 }

@@ -103,5 +103,25 @@ namespace SiteLeiloes.Controllers
 
             return NoContent();
         }
+        
+        [HttpPost("register")]
+        public IActionResult Register(Utilizador utilizador)
+        {
+            try
+            {
+                // Adicione lógica para verificar se o utilizador já existe ou outros critérios de validação
+
+                // Se a validação for bem-sucedida, crie o utilizador
+                _repository.Create(utilizador);
+                _repository.SaveChanges();
+
+                // Redirecione o utilizador para a página de login ou outra página apropriada
+                return RedirectToAction("Login", "Account"); // Por exemplo, redirecione para a página de login
+            }
+            catch (Exception e)
+            {
+                return BadRequest(e.Message); // Retorna uma resposta de erro em caso de falha
+            }
+        }
     }
 }
