@@ -1,0 +1,143 @@
+﻿html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    min-height: 100vh;
+    /*height: 100vh;*/ /* Forçar a altura mínima da página para a altura da janela do navegador */
+    overflow-x: hidden; /* Impede a rolagem horizontal */
+}
+
+.sidebar {
+    background-image: url('/images/menu.png');
+    background-size: 100% 100%; /* Isso vai esticar a imagem para cobrir toda a barra lateral */
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100vh;
+    z-index: 2;
+    background-position: center center;
+}
+
+/*
+.sidebar {
+    background-image: url('/images/menu.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px;
+    height: 100vh;  Usa a altura da janela de visualização 
+    z-index: 2;
+}*/
+
+ 
+.menu-button {
+    width: 100%;  
+    height: calc(100vh / 7);  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    .menu-button a {
+        width: 100%;
+        height: 100%;
+        display: block;   
+    }
+
+
+.auction-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;   
+    margin-bottom: 20px;
+    padding-left: 170px;   
+    box-sizing: border-box;
+}
+/*.auction-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-left: 120px;*/ /* Valor ajustado para aproximar as imagens da descrição */
+    /*box-sizing: border-box;
+}*/
+
+/*.auction-image {
+    margin-right: 50px;  
+    flex: 0 0 200px;*/ /* largura do contêiner da imagem */
+    /*height: 150px;*/ /* altura do contêiner da imagem */
+    /*display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    overflow: hidden; 
+}*/
+.auction-image {
+    margin-right: 20px; /* Valor ajustado se necessário para diminuir o espaço */
+    flex: 0 0 200px; /* Mantém a largura fixa do contêiner da imagem */
+    height: 150px; /* Mantém a altura fixa do contêiner da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.auction-image img {
+    max-width: 100%; 
+    max-height: 100%;
+    object-fit: contain; 
+}
+
+.auction-details {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.auction-name {
+    font-weight: bold;   
+}
+ 
+/*@media (max-width: 768px) {
+    .sidebar {
+        width: 50px;  Reduz a largura da sidebar 
+        background-size: contain;  Garante que a imagem esteja completamente visível 
+    }
+
+    .auction-item {
+        justify-content: flex-start;
+        padding-left: 60px;  Espaçamento à esquerda ajustado para a sidebar reduzida 
+    }
+
+    .auction-image {
+        margin-right: 20px;  Ajusta a margem direita para telas pequenas 
+        max-width: 150px;  Largura máxima da imagem ajustada para telas pequenas 
+        max-height: 150px;  Altura máxima da imagem ajustada para telas pequenas 
+    }
+
+    .auction-details {
+        margin-left: 20px;  Espaçamento à esquerda nos detalhes 
+    }
+}
+
+@media (max-width: 500px) {
+    .auction-item {
+        flex-direction: column;
+        align-items: center;  Centraliza os itens na tela 
+        padding-left: 0;  Remove o espaçamento à esquerda 
+    }
+
+    .auction-image {
+        max-width: 80%;  A imagem cresce para preencher mais espaço horizontal 
+        max-height: none;  Remove a restrição de altura máxima 
+        margin-bottom: 10px;  Espaço abaixo da imagem 
+    }
+
+    .auction-details {
+        width: 90%;
+        margin: 0 auto;  Centraliza os detalhes 
+    }
+}*/

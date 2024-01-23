@@ -1,0 +1,81 @@
+﻿body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Adicione estas regras ao seu arquivo perfil.css */
+
+.perfil-container {
+    margin-left: 170px;
+    display: flex; /* Usa flexbox para colocar h3 e input na mesma linha */
+    align-items: center; /* Alinha verticalmente no centro (opcional) */
+    margin-bottom: 5px; /* Adicione um espaçamento inferior entre os containers */
+}
+
+    .perfil-container h2 {
+        margin-right: 20px; /* Ajuste o valor conforme necessário */
+        display: inline-block; /* Isso permite que a margem seja aplicada corretamente */
+    }
+
+    .perfil-container span {
+        display: inline-block; /* Isso permite que o espaçamento seja aplicado corretamente */
+        margin-right: 10px; /* Ajuste o valor conforme necessário */
+    }    
+
+    .perfil-container h3 {
+        margin-right: 10px; /* Adicione espaçamento direito entre h3 e input (opcional) */
+    }
+
+    /* Estilo para os inputs (opcional) */
+    .perfil-container input {
+        width: 40%; /* Ocupar 40% da largura disponível */
+        padding: 5px; /* Adicione um preenchimento interno aos inputs */
+        box-sizing: border-box; /* Inclua a largura e o preenchimento na largura total */
+        margin-left: 15px;
+        border: none;
+        font-size: 25px; /* Tamanho da fonte desejado, você pode ajustar conforme necessário */
+    }
+
+.sidebar {
+    background-image: url('/images/menu.png'); /* Atualize com o caminho correto */
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 150px; /* Ajuste a largura de acordo com o tamanho da sua imagem */
+    height: 100vh;
+    z-index: 100;
+    background-size: auto 100%; /* Ajusta a altura da imagem para 100% */
+    background-repeat: no-repeat; /* Impede que a imagem se repita */
+}
+
+.menu-button {
+    width: 150px; /* A mesma largura da sidebar */
+    height: 14.286%; /* Ajuste de acordo com o número de botões */
+    position: relative; /* Posicionamento em relação à sidebar */
+    float: left; /* Alinha os botões horizontalmente */
+    cursor: pointer;
+}
+
+.star-rating .star {
+    color: #ccc; /* Cor padrão das estrelas, cinza claro */
+}
+
+/* Esta regra colore as estrelas baseadas na avaliação do usuário */
+.star-rating[data-rating='4.5'] .star:nth-child(-n+4), /* Seleciona as primeiras 4 estrelas para uma avaliação de 4.5 */
+.star-rating[data-rating='4.5'] .star:nth-child(5):before { /* Seleciona a metade da quinta estrela */
+    color: gold;
+    content: "\\2605\\00a0\\2606"; /* Código Unicode para estrela preenchida seguida de um espaço e uma estrela não preenchida */
+}
+
+/* Você deve adicionar regras similares para cada possível avaliação (1, 1.5, 2, 2.5, etc.) */
+
+/* Esta regra remove a interatividade das estrelas */
+.star-rating .star {
+    pointer-events: none;
+}
+
+

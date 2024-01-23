@@ -11,52 +11,36 @@
     <script src="~/js/register.js"></script>
 </head>
 <body>
-    <!--<form method="post">
-        <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-        <div class="form-group">
-            <label asp-for="Input.Username" class="control-label"></label>
-            <input asp-for="Input.Username" class="form-control" />
-            <span asp-validation-for="Input.Username" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Input.Email" class="control-label"></label>
-            <input asp-for="Input.Email" class="form-control" />
-            <span asp-validation-for="Input.Email" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Input.Password" class="control-label"></label>
-            <input asp-for="Input.Password" class="form-control" />
-            <span asp-validation-for="Input.Password" class="text-danger"></span>
-        </div>
-        <div class="form-group">
-            <label asp-for="Input.ConfirmPassword" class="control-label"></label>
-            <input asp-for="Input.ConfirmPassword" class="form-control" />
-            <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
-        </div>
-        <button type="submit" class="btn btn-primary">Registrar</button>
-    </form>-->
-    <div class="login-container">
-        <div class="login-box">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <div class="user-box">
-                    <input type="text" name="username" required="">
-                    <label>Username</label>
+    <div class="logo-container">
+        <img src="~/images/carensesimbolo.png" alt="Logotipo Carense" class="logo-normal">
+    </div>
+    <div class="container">
+        <div class="box">
+            <h2>Registrar</h2>
+            <form id="registerForm" method="post">
+                <div class="input-box">
+                    <input asp-for="Input.Username" required="" placeholder="Username">
+                    <span asp-validation-for="Input.Username" class="text-danger"></span>
                 </div>
-                <div class="user-box">
-                    <input type="password" name="password" required="">
-                    <label>Password</label>
+                <div class="input-box">
+                    <input asp-for="Input.Email" required="" placeholder="Email">
+                    <span asp-validation-for="Input.Email" class="text-danger"></span>
                 </div>
-                <a href="#" onclick="submitForm()">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    Login
-                </a>
-                <a href="#" class="create-account">Create Account</a>
+                <div class="input-box">
+                    <input asp-for="Input.Password" type="password" required="" placeholder="Password">
+                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                </div>
+                <div class="input-box">
+                    <input asp-for="Input.ConfirmPassword" type="password" required="" placeholder="Confirm Password">
+                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                </div>
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <button type="submit" class="submit-btn">Enviar</button>
             </form>
+            <a href="#" class="account-link">Já possui conta?</a>
         </div>
     </div>
 </body>
 </html>
+
+                    

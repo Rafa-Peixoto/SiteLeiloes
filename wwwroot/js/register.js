@@ -1,16 +1,31 @@
-@section Scripts {
-    <script>
-        document.addEventListener("DOMContentLoaded", function(){
-            // Validação do lado do cliente, se necessário
-            var form = document.querySelector('form');
-        form.onsubmit = function() {
-                // Verifique se os campos do formulário são válidos
-                if (!form.checkValidity()) {
-            event.preventDefault(); // Impede o envio do formulário
-        event.stopPropagation();
-                }
-        form.classList.add('was-validated');
-            };
+ï»¿<script>
+    document.addeventlistener("domcontentloaded", function(){
+        // validaï¿½ï¿½o do lado do cliente, se necessï¿½rio
+        var form = document.queryselector('form');
+    form.onsubmit = function() {
+            // verifique se os campos do formulï¿½rio sï¿½o vï¿½lidos
+            if (!form.checkvalidity()) {
+        event.preventdefault(); // impede o envio do formulï¿½rio
+    event.stoppropagation();
+            }
+    form.classlist.add('was-validated');
+        };
+    });
+
+     document.addEventListener('DOMContentLoaded', (event) => {
+        const logo = document.querySelector('.logo-container img'); // Seleciona a imagem do logotipo
+    const inputs = document.querySelectorAll('.container input'); // Seleciona todos os inputs dentro do container
+
+        inputs.forEach(input => {
+        // Quando qualquer input ganha foco
+        input.addEventListener('focus', () => {
+            logo.classList.add('logo-enlarged'); // Adiciona a classe que aumenta o logotipo
         });
-    </script>
-}
+
+            // Quando qualquer input perde foco
+            input.addEventListener('blur', () => {
+        logo.classList.remove('logo-enlarged'); // Remove a classe que aumenta o logotipo
+            });
+        });
+    });
+</script>

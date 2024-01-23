@@ -1,12 +1,92 @@
 {
   "Files": [
     {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\background.css",
+      "PackagePath": "staticwebassets\\css\\background.css"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagAtividadeUser.css",
+      "PackagePath": "staticwebassets\\css\\pagAtividadeUser.css"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagGaragem.css",
+      "PackagePath": "staticwebassets\\css\\pagGaragem.css"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagInicial.css",
+      "PackagePath": "staticwebassets\\css\\pagInicial.css"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFavoritos.css",
+      "PackagePath": "staticwebassets\\css\\pagLeiloesFavoritos.css"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFuturos.css",
+      "PackagePath": "staticwebassets\\css\\pagLeiloesFuturos.css"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLicitacoesUser.css",
+      "PackagePath": "staticwebassets\\css\\pagLicitacoesUser.css"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagUser.css",
+      "PackagePath": "staticwebassets\\css\\pagUser.css"
+    },
+    {
       "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\register.css",
       "PackagePath": "staticwebassets\\css\\register.css"
     },
     {
-      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\corsa.jpg",
-      "PackagePath": "staticwebassets\\images\\corsa.jpg"
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\BMW-E36-M3.jpg",
+      "PackagePath": "staticwebassets\\images\\BMW-E36-M3.jpg"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\backgroundInicio.png",
+      "PackagePath": "staticwebassets\\images\\backgroundInicio.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.jpg",
+      "PackagePath": "staticwebassets\\images\\carensesimbolo.jpg"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.png",
+      "PackagePath": "staticwebassets\\images\\carensesimbolo.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\ferrari.png",
+      "PackagePath": "staticwebassets\\images\\ferrari.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\gtr.png",
+      "PackagePath": "staticwebassets\\images\\gtr.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\jipe.png",
+      "PackagePath": "staticwebassets\\images\\jipe.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\lamboHuracan.png",
+      "PackagePath": "staticwebassets\\images\\lamboHuracan.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\lamboUrus.png",
+      "PackagePath": "staticwebassets\\images\\lamboUrus.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\logoPalavras.png",
+      "PackagePath": "staticwebassets\\images\\logoPalavras.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\menu.png",
+      "PackagePath": "staticwebassets\\images\\menu.png"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\paginicial.jpg",
+      "PackagePath": "staticwebassets\\images\\paginicial.jpg"
+    },
+    {
+      "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\perfil.js",
+      "PackagePath": "staticwebassets\\js\\perfil.js"
     },
     {
       "Id": "C:\\university\\3ano\\Laboratórios de Informática 4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\register.js",

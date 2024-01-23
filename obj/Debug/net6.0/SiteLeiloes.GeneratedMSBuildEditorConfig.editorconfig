@@ -18,6 +18,34 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/AtividadeUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxBdGl2aWRhZGVVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/LeiloesFavoritos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMZWlsb2VzRmF2b3JpdG9zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/LeiloesFuturos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMZWlsb2VzRnV0dXJvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/LicitacoesUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMaWNpdGFjb2VzVXNlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/PaginaGaragem.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxQYWdpbmFHYXJhZ2VtLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/PaginaUser.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxQYWdpbmFVc2VyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/PagInicial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxQYWdJbmljaWFsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

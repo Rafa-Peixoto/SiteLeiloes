@@ -28,6 +28,6 @@
             Avaliacao_total = avaliacao_total;
             Nr_avaliacoes = nr_avaliacoes;
         }
-
+        public float AvaliacaoMedia => Nr_avaliacoes > 0 ? Avaliacao_total / Nr_avaliacoes : 0;
     }
 }

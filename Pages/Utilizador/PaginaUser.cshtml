@@ -1,0 +1,81 @@
+﻿@page "/PaginaUser/"
+
+@using SiteLeiloes.Models 
+
+@{
+    var userModel = new Utilizador(1, "joaorodrigues61", "Joao123!", "João Rodrigues", 20, "joaorod@gmail.com", "916338258", "20035063", "300430723", 4.5f, 10); // Crie uma instância do seu modelo de usuário com os dados reais
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Leilões</title>
+    <link href="~/css/pagUser.css" rel="stylesheet">
+    <link href="~/css/background.css" rel="stylesheet">
+</head>
+<body>
+    <img src="/images/logoPalavras.png" alt="Logo" id="logo">
+    <div class="sidebar">
+        <!-- Exemplo de botões de menu com links invisíveis -->
+        <div class="menu-button"><a href="/PagInicial/"></a></div>
+        <div class="menu-button"><a href="/PaginaUser/"></a></div>
+        <div class="menu-button"><a href="/PaginaGaragem/" /></a></div>
+        <div class="menu-button"><a href="/LicitacoesUser/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFavoritos/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFuturos/"></a></div>
+        <div class="menu-button"><a href="/AtividadeUser/"></a></div>
+        <!-- Adicione mais botões conforme necessário -->
+    </div>
+    </div>
+    <div class="perfil-container">
+        <h1>Perfil</h1>
+    </div>
+    <div class="perfil-container">
+        <h2>Username </h2>
+        <span>@userModel.Username</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Email </h2>
+        <span>@userModel.Email</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Nome </h2>
+        <span>@userModel.Nome</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Idade </h2>
+        <span>@userModel.Idade</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>CC </h2>
+        <span>@userModel.CC</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Nif </h2>
+        <span>@userModel.Nif</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Telefone </h2>
+        <span>@userModel.Telefone</span>
+    </div>
+
+    <div class="perfil-container">
+        <h2>Avaliação</h2>
+        <div class ="star-rating" data-rating="@userModel.AvaliacaoMedia.ToString("N1", System.Globalization.CultureInfo.InvariantCulture)">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+
+    </div> 
+</body>
+</html>

@@ -1,0 +1,74 @@
+﻿@page "/PaginaGaragem/"
+@using SiteLeiloes.Models
+@model PaginaGaragemModel
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Leilões</title>
+    <link href="~/css/pagInicial.css" rel="stylesheet">
+    <link href="~/css/background.css" rel="stylesheet">
+</head>
+<body>
+    <img src="/images/logoPalavras.png" alt="Logo" id="logo">
+    <div class="sidebar">
+        <!-- Exemplo de botões de menu com links invisíveis -->
+        <div class="menu-button"><a href="/PagInicial/"></a></div>
+        <div class="menu-button"><a href="/PaginaUser/"></a></div>
+        <div class="menu-button"><a href="/PaginaGaragem/" /></a></div>
+        <div class="menu-button"><a href="/LicitacoesUser/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFavoritos/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFuturos/"></a></div>
+        <div class="menu-button"><a href="/AtividadeUser/"></a></div>
+        <!-- Adicione mais botões conforme necessário -->
+    </div>
+    <div class="content">
+        @foreach (var leilao in Model.Leiloes)
+        {
+            <div class="auction-item">
+                <div class="auction-image">
+                    <img src="@leilao.ImagemUrl" alt="Imagem do Leilão">
+                </div>
+                <div class="auction-details">
+                    <div class="auction-name">Leilão @leilao.Id</div>
+                    <div class="auction-info">
+                        <strong> Comprar já: @leilao.Valor</strong><br>
+                        <span class="tempo-restante" data-data-inicio="@leilao.Data_de_inicio.ToString("yyyy-MM-ddTHH:mm:ss")" data-data-fim="@leilao.Data_de_fim.ToString("yyyy-MM-ddTHH:mm:ss")">Calculando...</span>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    <script>
+        function atualizarTempoRestante() {
+            var elementosTempoRestante = document.querySelectorAll(".tempo-restante");
+            elementosTempoRestante.forEach(function (elemento) {
+                var dataInicio = new Date(elemento.getAttribute("data-data-inicio"));
+                var dataFim = new Date(elemento.getAttribute("data-data-fim"));
+                var dataAtual = new Date();
+                var tempoRestante = dataFim - dataAtual;
+
+                if (tempoRestante <= 0) {
+                    elemento.textContent = "Tempo Expirado";
+                } else {
+                    var horas = Math.floor(tempoRestante / 3600000);
+                    tempoRestante = tempoRestante % 3600000;
+                    var minutos = Math.floor(tempoRestante / 60000);
+                    tempoRestante = tempoRestante % 60000;
+                    var segundos = Math.floor(tempoRestante / 1000);
+                    elemento.textContent = "Tempo Restante: " + horas + ":" + minutos + ":" + segundos;
+                }
+            });
+        }
+
+        // Chame a função para atualizar o tempo restante a cada segundo
+        setInterval(atualizarTempoRestante, 1000);
+
+        // Atualize o tempo restante imediatamente após o carregamento da página
+        atualizarTempoRestante();
+    </script>
+</body>
+</html>
