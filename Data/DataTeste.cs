@@ -1,9 +1,4 @@
 ﻿using SiteLeiloes.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.AspNetCore.Mvc.RazorPages;
-using System; // Importa o namespace necessário para usar DateTime
-using System.Collections.Generic; // Importa para usar List
-using System.Linq; // Importa para usar OrderBy
 
 namespace SiteLeiloes.Data
 {

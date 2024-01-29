@@ -1,9 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SiteLeiloes.Data.Interfaces;
 using SiteLeiloes.Models;
-using System.Collections.Generic;
-using System.Linq;
-
+using System.Diagnostics;
+using BCrypt.Net;
 namespace SiteLeiloes.Data.Components
 {
     public class UtilizadorRepository : IUtilizadorRepository
@@ -31,6 +30,7 @@ namespace SiteLeiloes.Data.Components
         {
             try
             {
+                utilizador.Password = BCrypt.Net.BCrypt.HashPassword(utilizador.Password);
                 _context.Utilizador.Add(utilizador);
                 _context.SaveChanges();
             }
@@ -80,7 +80,24 @@ namespace SiteLeiloes.Data.Components
         }
         public Utilizador GetByCredentials(string username, string password)
         {
-            return _context.Utilizador.FirstOrDefault(c => c.Username == username && c.Password == password);
+            // Encontrar o utilizador com base no nome de utilizador
+            var utilizador = _context.Utilizador
+                .FirstOrDefault(u => u.Username == username);
+
+            if (utilizador == null)
+            {
+                // O utilizador não foi encontrado
+                return null;
+            }
+
+            // Verificar se a palavra-passe coincide
+            if (BCrypt.Net.BCrypt.Verify(password, utilizador.Password))
+            {
+                return utilizador;
+            }
+
+            // A palavra-passe está incorreta
+            return null;
         }
     }
 }

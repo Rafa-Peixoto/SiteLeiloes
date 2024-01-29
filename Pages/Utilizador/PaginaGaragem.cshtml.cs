@@ -1,11 +1,7 @@
-using SiteLeiloes.Models;
 // No arquivo PagInicialModel.cs
-using SiteLeiloes.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using System.Collections.Generic;
 using SiteLeiloes.Data;
-using System.Drawing;
-using Microsoft.EntityFrameworkCore;
+using SiteLeiloes.Models;
 
 public class PaginaGaragemModel : PageModel
 {

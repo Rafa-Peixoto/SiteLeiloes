@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "X7WwarV/RGICOvsOh8o0EHayZ4tW7XRFMsGGPDqjsXvUXp+f1ChGPwtKphlPlZMCe0HonTgeJ7FVY9FVX92DAw==",
+  "dgSpecHash": "pdEanYIMtdzWMolTCUzFMlnrJhQaNUZygUfWD56V7BT5ttIafUn8x6W3WdECmNsCsoZtfkGTVTEQK4whoJI6ng==",
   "success": true,
-  "projectFilePath": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\SiteLeiloes.csproj",
+  "projectFilePath": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\r4f4e\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\r4f4e\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
+    "C:\\Users\\r4f4e\\.nuget\\packages\\bcrypt.net-next\\4.0.3\\bcrypt.net-next.4.0.3.nupkg.sha512",
     "C:\\Users\\r4f4e\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\r4f4e\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\r4f4e\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

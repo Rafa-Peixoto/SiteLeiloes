@@ -1,83 +1,78 @@
+#define DEBUG
+
+using System.Collections.Generic;
+using System.Security.Claims;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
-using Microsoft.Extensions.Logging;
 using SiteLeiloes.Data.Interfaces;
+using SiteLeiloes.Models;
 using System.Diagnostics;
-using System.Security.Claims;
 
 namespace SiteLeiloes.Pages.Utilizador
 {
     [AllowAnonymous]
     public class LoginsModel : PageModel
     {
-
-        private readonly IUtilizadorRepository _utilizadorRepository;
-        private readonly ILogger<LoginsModel> _logger;
-
-        [BindProperty]
-        public LoginInputModel Input { get; set; }
-
-        public LoginsModel(IUtilizadorRepository utilizadorRepository, ILogger<LoginsModel> logger)
-        {
-            _utilizadorRepository = utilizadorRepository;
-            _logger = logger;
-        }
         public class LoginInputModel
         {
             public string? Username { get; set; }
             public string? Password { get; set; }
         }
 
+        private readonly IUtilizadorRepository _utilizadorRepository;
+
+        [BindProperty]
+        public LoginInputModel Input { get; set; }
+
+        public LoginsModel(IUtilizadorRepository utilizadorRepository)
+        {
+            _utilizadorRepository = utilizadorRepository;
+        }
+
         public void OnGet()
         {
-            // Página de carregamento
         }
 
-        public object Get_logger()
+        public async Task<IActionResult> OnPostAsync()
         {
-            return _logger;
+            Debug.WriteLine("Onpost");
+            var result = await ProcessarAutenticacaoAsync();
+            Debug.WriteLine("Result: " + result);
+            return result;
         }
 
-        public IActionResult OnPost()
+        private async Task<IActionResult> ProcessarAutenticacaoAsync()
         {
-            Console.WriteLine("Entrou no método OnPost");
-            Debugger.Break();
-            // Verifique se o utilizador existe
+            Debug.WriteLine("Processar ");
             var utilizador = _utilizadorRepository.GetByCredentials(Input.Username, Input.Password);
 
-            if(!ModelState.IsValid)
+            if (!ModelState.IsValid)
             {
+                Debug.WriteLine("Model state is invalid");
                 return Page();
             }
+
             if (utilizador == null)
             {
-                _logger.LogError($"Login falhou para o utilizador {Input.Username}. Utilizador não encontrado.");
-                // Utilizador não encontrado
+                Debug.WriteLine("credencias invalidas");
                 ModelState.AddModelError(string.Empty, "Credenciais inválidas");
                 return Page();
             }
 
-            // Autenticação bem-sucedida
-            HttpContext.Session.SetString("NomeUtilizador", utilizador.Username);
             var claims = new List<Claim>
             {
-                new Claim(ClaimTypes.Name, utilizador.Username),
-                new Claim(ClaimTypes.Email, utilizador.Email),
-                // Adicione mais claims conforme necessário
+                new Claim(ClaimTypes.Name, utilizador.Username)
             };
 
-            var identity = new ClaimsIdentity(claims, "AuthenticationCookies");
-            var principal = new ClaimsPrincipal(identity);
+            var identity = new ClaimsIdentity(claims, "Cookies");
+            await HttpContext.SignInAsync("Cookies", new ClaimsPrincipal(identity));
 
-            HttpContext.SignInAsync("AuthenticationCookies", principal);
+            Debug.WriteLine("1");
 
-            // Adicione mais informações do utilizador à sessão conforme necessário
-            return RedirectToPage("/PagInicial/"); // Substitua "/Index" pelo caminho da sua página principal
-
-
+            return RedirectToPage("PagInicial");
         }
     }
 }
-

@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "EDdh3usZDCGgvWoTuEv1UBssSRNh/L60DksW2hFhCZU=",
+  "Hash": "IH+3UGXhfZ8qRIGw4vC4uZ2fVnzLBlLzq6tKOILsoIY=",
   "Source": "SiteLeiloes",
   "BasePath": "_content/SiteLeiloes",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SiteLeiloes\\wwwroot",
       "Source": "SiteLeiloes",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\background.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\background.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/background.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\background.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\carro.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\carro.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/carro.css",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\css\\carro.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\leilao.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\leilao.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/leilao.css",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot\\css\\leilao.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\logins.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\logins.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/logins.css",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot\\css\\logins.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\pagAtividadeUser.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagAtividadeUser.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/pagAtividadeUser.css",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pagAtividadeUser.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\pagGaragem.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagGaragem.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/pagGaragem.css",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pagGaragem.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\pagInicial.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagInicial.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/pagInicial.css",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pagInicial.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFavoritos.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFavoritos.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/pagLeiloesFavoritos.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pagLeiloesFavoritos.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFuturos.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLeiloesFuturos.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/pagLeiloesFuturos.css",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pagLeiloesFuturos.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\pagLicitacoesUser.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagLicitacoesUser.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/pagLicitacoesUser.css",
       "AssetKind": "All",
@@ -207,10 +207,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pagLicitacoesUser.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\pagUser.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\pagUser.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/pagUser.css",
       "AssetKind": "All",
@@ -226,10 +226,10 @@
       "OriginalItemSpec": "wwwroot\\css\\pagUser.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\css\\register.css",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\css\\register.css",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "css/register.css",
       "AssetKind": "All",
@@ -245,10 +245,10 @@
       "OriginalItemSpec": "wwwroot\\css\\register.css"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\backgroundInicio.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\backgroundInicio.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/backgroundInicio.png",
       "AssetKind": "All",
@@ -264,10 +264,10 @@
       "OriginalItemSpec": "wwwroot\\images\\backgroundInicio.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\BMW-E36-M3.jpg",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\BMW-E36-M3.jpg",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/BMW-E36-M3.jpg",
       "AssetKind": "All",
@@ -283,10 +283,10 @@
       "OriginalItemSpec": "wwwroot\\images\\BMW-E36-M3.jpg"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.jpg",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.jpg",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/carensesimbolo.jpg",
       "AssetKind": "All",
@@ -302,10 +302,10 @@
       "OriginalItemSpec": "wwwroot\\images\\carensesimbolo.jpg"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\carensesimbolo.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/carensesimbolo.png",
       "AssetKind": "All",
@@ -321,10 +321,10 @@
       "OriginalItemSpec": "wwwroot\\images\\carensesimbolo.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\ferrari.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\ferrari.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/ferrari.png",
       "AssetKind": "All",
@@ -340,10 +340,10 @@
       "OriginalItemSpec": "wwwroot\\images\\ferrari.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\gtr.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\gtr.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/gtr.png",
       "AssetKind": "All",
@@ -359,10 +359,10 @@
       "OriginalItemSpec": "wwwroot\\images\\gtr.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\jipe.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\jipe.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/jipe.png",
       "AssetKind": "All",
@@ -378,10 +378,10 @@
       "OriginalItemSpec": "wwwroot\\images\\jipe.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\lamboHuracan.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\lamboHuracan.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/lamboHuracan.png",
       "AssetKind": "All",
@@ -397,10 +397,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lamboHuracan.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\lamboUrus.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\lamboUrus.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/lamboUrus.png",
       "AssetKind": "All",
@@ -416,10 +416,10 @@
       "OriginalItemSpec": "wwwroot\\images\\lamboUrus.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\loginfoto.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\loginfoto.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/loginfoto.png",
       "AssetKind": "All",
@@ -435,10 +435,10 @@
       "OriginalItemSpec": "wwwroot\\images\\loginfoto.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\logoPalavras.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\logoPalavras.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/logoPalavras.png",
       "AssetKind": "All",
@@ -454,10 +454,10 @@
       "OriginalItemSpec": "wwwroot\\images\\logoPalavras.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\menu.png",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\menu.png",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/menu.png",
       "AssetKind": "All",
@@ -473,10 +473,10 @@
       "OriginalItemSpec": "wwwroot\\images\\menu.png"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\images\\paginicial.jpg",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\paginicial.jpg",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "images/paginicial.jpg",
       "AssetKind": "All",
@@ -492,10 +492,10 @@
       "OriginalItemSpec": "wwwroot\\images\\paginicial.jpg"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\js\\leilao.js",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\leilao.js",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "js/leilao.js",
       "AssetKind": "All",
@@ -511,10 +511,10 @@
       "OriginalItemSpec": "wwwroot\\js\\leilao.js"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\js\\logins.js",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\logins.js",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "js/logins.js",
       "AssetKind": "All",
@@ -530,10 +530,10 @@
       "OriginalItemSpec": "wwwroot\\js\\logins.js"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\js\\perfil.js",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\perfil.js",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "js/perfil.js",
       "AssetKind": "All",
@@ -549,10 +549,10 @@
       "OriginalItemSpec": "wwwroot\\js\\perfil.js"
     },
     {
-      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\js\\register.js",
+      "Identity": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\js\\register.js",
       "SourceId": "SiteLeiloes",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes2\\SiteLeiloes\\wwwroot\\",
+      "ContentRoot": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\",
       "BasePath": "_content/SiteLeiloes",
       "RelativePath": "js/register.js",
       "AssetKind": "All",

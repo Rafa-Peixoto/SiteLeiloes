@@ -1,8 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SiteLeiloes.Data;
 using SiteLeiloes.Models;
-using System.Collections.Generic;
 
 namespace SiteLeiloes.Pages.Utilizador
 {
@@ -18,9 +16,9 @@ namespace SiteLeiloes.Pages.Utilizador
             List<Leilao> leiloes = dataTeste.Leiloes;
 
             // Filtrando os leilões onde o licitador com ID 1 está presente
-        //    Leiloes = leiloes
-        //       .Where(leilao => leilao.Licitadores.Any(licitador => licitador.UtilizadorId == 1))
-        //       .ToList();
+            //    Leiloes = leiloes
+            //       .Where(leilao => leilao.Licitadores.Any(licitador => licitador.UtilizadorId == 1))
+            //       .ToList();
         }
     }
 }

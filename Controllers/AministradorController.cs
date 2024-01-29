@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Coworker está localizada
-using SiteLeiloes.Data.Components; // Substitua com o namespace correto onde sua CoworkerRepository está localizada
-using SiteLeiloes.Data;
 using SiteLeiloes.Data.Interfaces;
+using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Coworker está localizada
 namespace SiteLeiloes.Controllers
 {
     [ApiController]

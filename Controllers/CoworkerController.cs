@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Coworker está localizada
-using SiteLeiloes.Data.Components; // Substitua com o namespace correto onde sua CoworkerRepository está localizada
-using SiteLeiloes.Data;
 using SiteLeiloes.Data.Interfaces;
+using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Coworker está localizada
 namespace SiteLeiloes.Controllers
 {
     [ApiController]
@@ -24,7 +21,7 @@ namespace SiteLeiloes.Controllers
             var result = _repository.GetAll();
             return Ok(result);
         }
-        
+
 
         // GET api/coworker/{id}
         [HttpGet("{id}")]
@@ -37,7 +34,7 @@ namespace SiteLeiloes.Controllers
             }
             return Ok(result);
         }
-        
+
         //POST api/coworker
         [HttpPost("{id}")]
         public ActionResult<Coworker> Create(Coworker coworker)

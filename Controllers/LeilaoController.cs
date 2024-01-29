@@ -1,10 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Threading.Tasks;
-using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Leilao está localizada
 using SiteLeiloes.Data.Interfaces; // Substitua com o namespace correto onde sua ILeilaoRepository está localizada
-using Microsoft.AspNetCore.Http;
+using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Leilao está localizada
 
 namespace SiteLeiloes.Controllers
 {

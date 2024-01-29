@@ -1,8 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SiteLeiloes.Data.Interfaces;
 using SiteLeiloes.Models;
-using System.Collections.Generic;
-using System.Linq;
 
 namespace SiteLeiloes.Data.Components
 {

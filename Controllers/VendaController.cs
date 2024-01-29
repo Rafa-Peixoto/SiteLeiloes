@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Venda está localizada
-using SiteLeiloes.Data.Components; // Substitua com o namespace correto onde sua VendaRepository está localizada
-using SiteLeiloes.Data;
 using SiteLeiloes.Data.Interfaces;
+using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Venda está localizada
 namespace SiteLeiloes.Controllers
 {
     [ApiController]

@@ -1,9 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using System.Collections.Generic;
-using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Utilizador está localizada
-using SiteLeiloes.Data.Components; // Substitua com o namespace correto onde sua UtilizadorRepository está localizada
-using SiteLeiloes.Data;
 using SiteLeiloes.Data.Interfaces;
+using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Utilizador está localizada
 namespace SiteLeiloes.Controllers
 {
     [ApiController]
@@ -28,14 +25,14 @@ namespace SiteLeiloes.Controllers
 
         // GET api/utilizador/{id}
         [HttpGet("{id}")]
-            public ActionResult<IEnumerable<Utilizador>> GetById(int id)
+        public ActionResult<IEnumerable<Utilizador>> GetById(int id)
+        {
+            var result = _repository.GetById(id);
+            if (result == null)
             {
-                var result = _repository.GetById(id);
-                if (result == null)
-                {
-                    return NotFound();
-                }
-                return Ok(result);
+                return NotFound();
+            }
+            return Ok(result);
         }
 
         //POST api/utilizador

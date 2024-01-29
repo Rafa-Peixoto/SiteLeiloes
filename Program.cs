@@ -1,9 +1,7 @@
-using SiteLeiloes.Data.Interfaces;
-using SiteLeiloes.Data.Components;
-using SiteLeiloes.Data;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Design;
-using Microsoft.Extensions.Logging;
+using SiteLeiloes.Data;
+using SiteLeiloes.Data.Components;
+using SiteLeiloes.Data.Interfaces;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -27,8 +25,8 @@ builder.Logging.ClearProviders();
 builder.Logging.AddConsole();
 builder.Logging.AddDebug();
 
-builder.Services.AddAuthentication("AuthenticationCookie")
-    .AddCookie("AuthenticationCookies", options =>
+builder.Services.AddAuthentication("Cookies")
+    .AddCookie("Cookies", options =>
     {
         options.ExpireTimeSpan = TimeSpan.FromMinutes(30);
         options.SlidingExpiration = true;
@@ -56,7 +54,7 @@ if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
-    
+
 }
 
 app.UseHttpsRedirection();
@@ -66,6 +64,7 @@ app.UseStaticFiles();
 app.UseSession();
 app.MapRazorPages();
 app.MapControllers();
+app.UseDeveloperExceptionPage();
 
 
 app.Run();

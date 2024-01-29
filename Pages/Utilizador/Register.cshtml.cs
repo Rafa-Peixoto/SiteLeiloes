@@ -1,16 +1,15 @@
 ﻿
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SiteLeiloes.Data.Interfaces;
-using System.ComponentModel.DataAnnotations;
 using SiteLeiloes.Models;
-using Microsoft.AspNetCore.Authorization;
 
 [AllowAnonymous]
 public class RegisterModel : PageModel
 {
     private readonly IUtilizadorRepository _utilizadorRepository;
-    
+
     [BindProperty]
     public Utilizador novoUtilizador { get; set; }
 
@@ -40,7 +39,7 @@ public class RegisterModel : PageModel
         }
 
         // Redirecionar para a página de sucesso ou login
-       
+
         return new JsonResult(new { success = true });
     }
 }

@@ -5,9 +5,10 @@ namespace SiteLeiloes.Data
 {
     public class CarenseDBContext : DbContext
     {
-        public CarenseDBContext(DbContextOptions<CarenseDBContext> opt): base(opt){
+        public CarenseDBContext(DbContextOptions<CarenseDBContext> opt) : base(opt)
+        {
         }
-        public DbSet<Coworker> Coworker { get; set;}
+        public DbSet<Coworker> Coworker { get; set; }
         public DbSet<Administrador> Administrador { get; set; }
         public DbSet<Carro> Carro { get; set; }
         public DbSet<Leilao> Leilao { get; set; }

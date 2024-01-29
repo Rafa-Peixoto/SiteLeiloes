@@ -1,6 +1,4 @@
 ﻿using SiteLeiloes.Models;
-using System.Collections.Generic;
-using System.Threading.Tasks;
 
 namespace SiteLeiloes.Data.Interfaces
 {

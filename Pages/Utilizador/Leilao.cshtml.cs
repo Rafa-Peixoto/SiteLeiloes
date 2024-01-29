@@ -1,6 +1,6 @@
 ﻿// Em seu arquivo leilao.cshtml.cs
-using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.RazorPages;
 using SiteLeiloes.Data.Interfaces;
 using SiteLeiloes.Models;
 

@@ -17,7 +17,8 @@
     <div class="container">
         <div class="box">
             <h2>Login</h2>
-            <form id="loginForm" method="post" asp-page="Utilizador/Logins">
+            <form id="loginForm" method="post" asp-page="/Logins">
+                @Html.AntiForgeryToken()
                 <div class="input-box">
                     <label for="username">Username:</label>
                     <input id="username" name="Input.Username" asp-for="Input.Username" required="" placeholder="Username">
