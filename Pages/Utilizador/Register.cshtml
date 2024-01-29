@@ -1,6 +1,5 @@
 ﻿@page "/"
-@model SiteLeiloes.Pages.Utilizador.RegisterModel
-
+@model RegisterModel
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,31 +15,27 @@
     </div>
     <div class="container">
         <div class="box">
-            <h2>Registrar</h2>
+            <h2>Registar</h2>
             <form id="registerForm" method="post">
+                @Html.AntiForgeryToken()
                 <div class="input-box">
-                    <input asp-for="Input.Username" required="" placeholder="Username">
-                    <span asp-validation-for="Input.Username" class="text-danger"></span>
+                    <input name="Username" required="" placeholder="Username"/>
                 </div>
                 <div class="input-box">
-                    <input asp-for="Input.Email" required="" placeholder="Email">
-                    <span asp-validation-for="Input.Email" class="text-danger"></span>
+                    <input name="Email" required="" placeholder="Email"/>
                 </div>
                 <div class="input-box">
-                    <input asp-for="Input.Password" type="password" required="" placeholder="Password">
-                    <span asp-validation-for="Input.Password" class="text-danger"></span>
+                    <input name="Password" type="password" required="" placeholder="Password"/>
                 </div>
                 <div class="input-box">
-                    <input asp-for="Input.ConfirmPassword" type="password" required="" placeholder="Confirm Password">
-                    <span asp-validation-for="Input.ConfirmPassword" class="text-danger"></span>
+                    <input name="ConfirmPassword" type="password" required="" placeholder="Confirm Password"/>
                 </div>
-                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
-                <button type="submit" class="submit-btn">Enviar</button>
+                <button type="button" onclick="submitRegisterForm()" class="submit-btn">Enviar</button>
             </form>
-            <a href="#" class="account-link">Já possui conta?</a>
+            <a href="/Login" class="account-link">Já possui conta?</a>
         </div>
     </div>
 </body>
 </html>
 
-                    
+                 +

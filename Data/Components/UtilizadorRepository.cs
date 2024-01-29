@@ -32,6 +32,7 @@ namespace SiteLeiloes.Data.Components
             try
             {
                 _context.Utilizador.Add(utilizador);
+                _context.SaveChanges();
             }
             catch (Exception)
             {
@@ -76,6 +77,10 @@ namespace SiteLeiloes.Data.Components
                 // Log the exception
                 return false;
             }
+        }
+        public Utilizador GetByCredentials(string username, string password)
+        {
+            return _context.Utilizador.FirstOrDefault(c => c.Username == username && c.Password == password);
         }
     }
 }

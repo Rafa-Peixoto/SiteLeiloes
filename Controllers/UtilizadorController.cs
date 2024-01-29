@@ -28,14 +28,14 @@ namespace SiteLeiloes.Controllers
 
         // GET api/utilizador/{id}
         [HttpGet("{id}")]
-        public ActionResult<IEnumerable<Utilizador>> GetById(int id)
-        {
-            var result = _repository.GetById(id);
-            if (result == null)
+            public ActionResult<IEnumerable<Utilizador>> GetById(int id)
             {
-                return NotFound();
-            }
-            return Ok(result);
+                var result = _repository.GetById(id);
+                if (result == null)
+                {
+                    return NotFound();
+                }
+                return Ok(result);
         }
 
         //POST api/utilizador
@@ -68,21 +68,21 @@ namespace SiteLeiloes.Controllers
 
                 existingUtilizador.Username = utilizador.Username;
                 existingUtilizador.Password = utilizador.Password;
-                existingUtilizador.Nome = utilizador.Nome;
-                existingUtilizador.Idade = utilizador.Idade;
-                existingUtilizador.Email = utilizador.Email;
-                existingUtilizador.Telefone = utilizador.Telefone;
-                existingUtilizador.CC = utilizador.CC;
-                existingUtilizador.Nif = utilizador.Nif;
-                existingUtilizador.Avaliacao_total = utilizador.Avaliacao_total;
-                existingUtilizador.Nr_avaliacoes = utilizador.Nr_avaliacoes;
+                //existingUtilizador.Nome = utilizador.Nome;
+                //existingUtilizador.Idade = utilizador.Idade;
+                //existingUtilizador.Email = utilizador.Email;
+                //existingUtilizador.Telefone = utilizador.Telefone;
+                //existingUtilizador.CC = utilizador.CC;
+                //existingUtilizador.Nif = utilizador.Nif;
+                //existingUtilizador.Avaliacao_total = utilizador.Avaliacao_total;
+                //existingUtilizador.Nr_avaliacoes = utilizador.Nr_avaliacoes;
 
                 _repository.Update(existingUtilizador);
                 _repository.SaveChanges();
 
                 return NoContent();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return BadRequest();
             }
@@ -102,26 +102,6 @@ namespace SiteLeiloes.Controllers
             _repository.SaveChanges();
 
             return NoContent();
-        }
-        
-        [HttpPost("register")]
-        public IActionResult Register(Utilizador utilizador)
-        {
-            try
-            {
-                // Adicione lógica para verificar se o utilizador já existe ou outros critérios de validação
-
-                // Se a validação for bem-sucedida, crie o utilizador
-                _repository.Create(utilizador);
-                _repository.SaveChanges();
-
-                // Redirecione o utilizador para a página de login ou outra página apropriada
-                return RedirectToAction("Login", "Account"); // Por exemplo, redirecione para a página de login
-            }
-            catch (Exception e)
-            {
-                return BadRequest(e.Message); // Retorna uma resposta de erro em caso de falha
-            }
         }
     }
 }

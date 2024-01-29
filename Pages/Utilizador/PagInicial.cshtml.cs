@@ -1,4 +1,4 @@
-using SiteLeiloes.Models;
+﻿using SiteLeiloes.Models;
 // No arquivo PagInicialModel.cs
 using SiteLeiloes.Models;
 using Microsoft.AspNetCore.Mvc.RazorPages;
@@ -10,17 +10,51 @@ public class PagInicialModel : PageModel
 {
     public List<Leilao> Leiloes { get; set; }
 
-    public void OnGet()
+    public void OnGet(string marca, string ordenacao)
     {
-        Leiloes = new List<Leilao>
-        {
-            new Leilao(1, 500.00f,10, 600.00f,1,4, DateTime.Now, DateTime.Now.AddHours(2), "/images/BMW-E36-M3.jpg"),
-            new Leilao(2, 800.00f,11, 900.00f,3,7, DateTime.Now, DateTime.Now.AddDays(1), "/images/lamboHuracan.png"),
-            new Leilao(3, 700.00f,31, 750.00f,4,7, DateTime.Now, DateTime.Now.AddMinutes(30), "/images/lamboUrus.png"),
-            new Leilao(4, 1.00f,31, 2.00f,4,7, DateTime.Now, DateTime.Now.AddMinutes(50), "/images/corsa.jpg")
-        };
-        Leiloes = Leiloes.OrderBy(leilao => (leilao.Data_de_fim - DateTime.Now)).ToList();
-    }
 
+          if (!User.Identity.IsAuthenticated)
+            {
+                // Se o utilizador não estiver autenticado, você pode redirecioná-lo para a página de login
+                Response.Redirect("/Login");
+            }
+
+        // Recupere informações da sessão
+        var nomeUtilizador = User.Identity.Name;
+        // Exemplo: Recupere outras informações armazenadas na sessão usando a serialização JSON
+        //var outrasInformacoes = JsonConvert.DeserializeObject<OutrasInformacoesTipo>(HttpContext.Session.GetString("OutrasInformacoes"));
+
+        // Instancia a classe DataTeste ou obtйm os dados de um repositуrio
+        var dataTeste = new DataTeste();
+        IEnumerable<Leilao> query = dataTeste.Leiloes;
+
+        // Se o filtro de marca foi fornecido, filtre a lista de leilхes pela marca
+        if (!string.IsNullOrEmpty(marca))
+        {
+            query = query.Where(leilao => leilao.Carro.Marca.Contains(marca, StringComparison.OrdinalIgnoreCase));
+
+        }
+
+        // Ordena a lista de leilхes de acordo com a seleзгo do usuбrio
+        switch (ordenacao)
+        {
+            case "dataCrescente":
+                query = query.OrderBy(leilao => leilao.Data_de_fim);
+                break;
+            case "dataDecrescente":
+                query = query.OrderByDescending(leilao => leilao.Data_de_fim);
+                break;
+            case "valorCrescente":
+                query = query.OrderBy(leilao => leilao.Valor); // Substitua Valor pelo campo correto
+                break;
+            case "valorDecrescente":
+                query = query.OrderByDescending(leilao => leilao.Valor); // Substitua Valor pelo campo correto
+                break;
+        }
+
+        // Atribui a lista de leilхes ordenada para a propriedade Leiloes
+        Leiloes = query.ToList();
+    }
 }
+
 

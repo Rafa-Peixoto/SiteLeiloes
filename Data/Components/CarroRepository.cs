@@ -22,7 +22,7 @@ namespace SiteLeiloes.Data.Components
         }
 
 
-        public Carro GetById(int id)
+        public Carro? GetById(int id)
         {
             return _context.Carro.FirstOrDefault(c => c.Id == id);
         }

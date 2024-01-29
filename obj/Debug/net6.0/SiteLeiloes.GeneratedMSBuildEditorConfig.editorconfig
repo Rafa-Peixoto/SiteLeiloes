@@ -9,43 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = SiteLeiloes
 build_property.RootNamespace = SiteLeiloes
-build_property.ProjectDir = C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes\
+build_property.ProjectDir = C:\university\3ano\labinf4\SiteLeiloes\SiteLeiloes2\SiteLeiloes\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\university\3ano\Laboratórios de Informática 4\SiteLeiloes\SiteLeiloes\SiteLeiloes
+build_property.MSBuildProjectDirectory = C:\university\3ano\labinf4\SiteLeiloes\SiteLeiloes2\SiteLeiloes
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/AtividadeUser.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/AtividadeUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxBdGl2aWRhZGVVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/LeiloesFavoritos.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/Carro.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxDYXJyby5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/Leilao.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMZWlsYW8uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/LeiloesFavoritos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMZWlsb2VzRmF2b3JpdG9zLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/LeiloesFuturos.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/LeiloesFuturos.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMZWlsb2VzRnV0dXJvcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/LicitacoesUser.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/LicitacoesUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMaWNpdGFjb2VzVXNlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/PaginaGaragem.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/Logins.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxMb2dpbnMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/PaginaGaragem.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxQYWdpbmFHYXJhZ2VtLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/PaginaUser.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/PaginaUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxQYWdpbmFVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/PagInicial.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/PagInicial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxQYWdJbmljaWFsLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/university/3ano/Laboratórios de Informática 4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/Register.cshtml]
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes2/SiteLeiloes/Pages/Utilizador/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

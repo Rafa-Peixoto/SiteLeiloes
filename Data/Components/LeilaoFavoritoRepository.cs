@@ -22,7 +22,7 @@ namespace SiteLeiloes.Data.Components
         }
 
 
-        public LeilaoFavorito GetById(int id)
+        public LeilaoFavorito? GetById(int id)
         {
             return _context.LeilaoFavorito.FirstOrDefault(c => c.Id == id);
         }

@@ -52,5 +52,6 @@ namespace SiteLeiloes.Models
             Data_de_fim = data_de_fim;
             ImagemUrl = imagemUrl;
         }
+
     }
 }

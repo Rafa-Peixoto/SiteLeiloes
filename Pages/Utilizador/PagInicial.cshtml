@@ -1,4 +1,6 @@
-﻿@page "/PagInicial/"
+﻿
+@page "/PagInicial/"
+
 @using SiteLeiloes.Models
 @model PagInicialModel
 
@@ -24,21 +26,49 @@
         <div class="menu-button"><a href="/AtividadeUser/" ></a></div>
         <!-- Adicione mais botões conforme necessário -->
     </div>
+
     <div class="content">
-        @foreach (var leilao in Model.Leiloes)
+        <div class="content">
+            <form method="get" action="/PagInicial/">
+                <div class="filters">
+                    <input type="text" name="marca" placeholder="Pesquisar por marca">
+                    <select name="ordenacao">
+                        <option value="dataCrescente">Data - Mais Recente</option>
+                        <option value="dataDecrescente">Data - Mais Antigo</option>
+                        <option value="valorCrescente">Valor - Crescente</option>
+                        <option value="valorDecrescente">Valor - Decrescente</option>
+                    </select>
+                    <button type="submit">Filtrar</button>
+                </div>
+            </form>
+        </div>
+
+        @if (Model.Leiloes != null)
         {
-            <div class="auction-item">
-                <div class="auction-image">
-                    <img src="@leilao.ImagemUrl" alt="Imagem do Leilão">
-                </div>
-                <div class="auction-details">
-                    <div class="auction-name">Leilão @leilao.Id</div>
-                    <div class="auction-info">
-                        <strong> Comprar já: @leilao.Valor</strong><br>
-                        <span class="tempo-restante" data-data-inicio="@leilao.Data_de_inicio.ToString("yyyy-MM-ddTHH:mm:ss")" data-data-fim="@leilao.Data_de_fim.ToString("yyyy-MM-ddTHH:mm:ss")">Calculando...</span>
-                    </div>
-                </div>
-            </div>
+            @foreach (var leilao in Model.Leiloes)
+            {
+                if (leilao.Carro != null)
+                {
+                    System.Diagnostics.Debug.WriteLine($"Leilao: {leilao.Carro.Marca} - {leilao.Data_de_inicio} até {leilao.Data_de_fim}");
+                     var leilaoUrl = $"/Leilao/{leilao.Id}"; // Substitua {leilao.Id} pelo campo apropriado que identifica o leilão
+                    <a href="@leilaoUrl" class="auction-link style=" text-decoration: none; color: inherit;"">
+
+                        <!-- Adicione esta linha -->
+                        <div class="auction-item">
+                            <div class="auction-image">
+                                <img src="@leilao.ImagemUrl" alt="Imagem do Leilão">
+                            </div>
+                            <div class="auction-details">
+                                <div class="auction-name">@leilao.Carro.Marca - @leilao.Carro.Modelo - @leilao.Carro.Ano - @leilao.Carro.Km km</div><br>
+                                <div class="auction-info">
+                                    <strong> Maior Licitação: @leilao.Valor</strong><br>
+                                    <span class="tempo-restante" data-data-inicio="@leilao.Data_de_inicio.ToString("yyyy-MM-ddTHH:mm:ss")" data-data-fim="@leilao.Data_de_fim.ToString("yyyy-MM-ddTHH:mm:ss")">Calculando...</span>
+                                </div>
+                            </div>
+                        </div>
+                     </a>
+                }
+            }
         }
     </div>
 
@@ -59,7 +89,7 @@
                     var minutos = Math.floor(tempoRestante / 60000);
                     tempoRestante = tempoRestante % 60000;
                     var segundos = Math.floor(tempoRestante / 1000);
-                    elemento.textContent = "Tempo Restante: " + horas + ":" + minutos + ":" + segundos;
+                    elemento.textContent = "Acaba em: " + horas + ":" + minutos + ":" + segundos;
                 }
             });
         }

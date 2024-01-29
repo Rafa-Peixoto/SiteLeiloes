@@ -1,9 +1,11 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using SiteLeiloes.Models; // Substitua com o namespace correto onde sua modelo Leilao está localizada
-using SiteLeiloes.Data.Components; // Substitua com o namespace correto onde sua LeilaoRepository está localizada
-using SiteLeiloes.Data;
-using SiteLeiloes.Data.Interfaces;
+using SiteLeiloes.Data.Interfaces; // Substitua com o namespace correto onde sua ILeilaoRepository está localizada
+using Microsoft.AspNetCore.Http;
+
 namespace SiteLeiloes.Controllers
 {
     [ApiController]
@@ -19,18 +21,17 @@ namespace SiteLeiloes.Controllers
 
         // GET api/leilao
         [HttpGet]
-        public ActionResult<IEnumerable<Leilao>> GetAll()
+        public async Task<ActionResult<IEnumerable<Leilao>>> GetAll()
         {
-            var result = _repository.GetAll();
+            var result = await _repository.GetAllAsync();
             return Ok(result);
         }
 
-
         // GET api/leilao/{id}
         [HttpGet("{id}")]
-        public ActionResult<IEnumerable<Leilao>> GetById(int id)
+        public async Task<ActionResult<Leilao>> GetById(int id)
         {
-            var result = _repository.GetById(id);
+            var result = await _repository.GetByIdAsync(id);
             if (result == null)
             {
                 return NotFound();
@@ -39,69 +40,103 @@ namespace SiteLeiloes.Controllers
         }
 
         //POST api/leilao
-        [HttpPost("{id}")]
-        public ActionResult<Leilao> Create(Leilao leilao)
+        [HttpPost]
+        public async Task<ActionResult<Leilao>> Create(Leilao leilao)
         {
             try
             {
-                _repository.Create(leilao);
-                _repository.SaveChanges();
-                return Ok(leilao);
+                await _repository.CreateAsync(leilao);
+                await _repository.SaveChangesAsync();
+                return CreatedAtAction(nameof(GetById), new { id = leilao.Id }, leilao);
             }
-            catch (Exception)
+            catch (Exception e)
             {
-                return BadRequest();
+                return BadRequest(e.Message);
             }
         }
 
         //PUT api/leilao/{id}
         [HttpPut("{id}")]
-        public ActionResult<Leilao> Update(int id, Leilao leilao)
+        public async Task<ActionResult> Update(int id, Leilao leilao)
         {
+            if (id != leilao.Id)
+            {
+                return BadRequest();
+            }
+
             try
             {
-                var existingLeilao = _repository.GetById(id);
-                if (existingLeilao == null)
-                {
-                    return NotFound();
-                }
-
-                existingLeilao.Preco_minimo = leilao.Preco_minimo;
-                existingLeilao.Cliente = leilao.Cliente;
-                existingLeilao.Valor = leilao.Valor;
-                existingLeilao.Vendedor = leilao.Vendedor;
-                existingLeilao.Carro = leilao.Carro;
-                existingLeilao.Data_de_inicio = leilao.Data_de_inicio;
-                existingLeilao.Data_de_fim = leilao.Data_de_fim;
-
-
-
-
-                _repository.Update(existingLeilao);
-                _repository.SaveChanges();
-
+                await _repository.UpdateAsync(leilao);
+                await _repository.SaveChangesAsync();
                 return NoContent();
             }
             catch (Exception e)
             {
-                return BadRequest();
+                if (!await _repository.ExistsAsync(id))
+                {
+                    return NotFound();
+                }
+                return BadRequest(e.Message);
             }
         }
 
         //DELETE api/leilao/{id}
         [HttpDelete("{id}")]
-        public ActionResult Delete(int id)
+        public async Task<ActionResult> Delete(int id)
         {
-            var leilao = _repository.GetById(id);
-            if (leilao == null)
+            try
             {
-                return NotFound();
+                var leilao = await _repository.GetByIdAsync(id);
+                if (leilao == null)
+                {
+                    return NotFound();
+                }
+
+                await _repository.DeleteAsync(id);
+                await _repository.SaveChangesAsync();
+                return NoContent();
             }
-
-            _repository.Delete(id);
-            _repository.SaveChanges();
-
-            return NoContent();
+            catch (Exception e)
+            {
+                return BadRequest(e.Message);
+            }
         }
+
+        // POST api/leilao/submitBid
+        [HttpPost("submitBid")]
+        public async Task<ActionResult> SubmitBid([FromBody] BidModel bid)
+        {
+            try
+            {
+                var leilao = await _repository.GetByIdAsync(bid.AuctionId);
+                if (leilao == null)
+                {
+                    return NotFound("Leilão não encontrado.");
+                }
+
+                if (bid.Value <= leilao.Valor)
+                {
+                    return BadRequest("O valor da licitação deve ser maior que o lance atual.");
+                }
+
+                // Atualize o lance atual aqui
+                leilao.Valor = bid.Value;
+                await _repository.UpdateAsync(leilao);
+                await _repository.SaveChangesAsync();
+
+                return Ok(new { success = true, message = "Lance recebido com sucesso!" });
+            }
+            catch (Exception e)
+            {
+                return StatusCode(StatusCodes.Status500InternalServerError, e.Message);
+            }
+        }
+    }
+
+    // Defina o modelo BidModel no mesmo namespace que o controlador
+    public class BidModel
+    {
+        public int AuctionId { get; set; }
+        public float Value { get; set; }
     }
 }

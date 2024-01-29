@@ -1,10 +1,10 @@
 ﻿@page "/PaginaUser/"
 
-@using SiteLeiloes.Models 
+@using SiteLeiloes.Models
 
-@{
+@* @{
     var userModel = new Utilizador(1, "joaorodrigues61", "Joao123!", "João Rodrigues", 20, "joaorod@gmail.com", "916338258", "20035063", "300430723", 4.5f, 10); // Crie uma instância do seu modelo de usuário com os dados reais
-}
+ *@}
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,49 +33,49 @@
     </div>
     <div class="perfil-container">
         <h2>Username </h2>
-        <span>@userModel.Username</span>
+        @* <span>@userModel.Username</span> *@
     </div>
 
     <div class="perfil-container">
         <h2>Email </h2>
-        <span>@userModel.Email</span>
+        @*  <span>@userModel.Email</span> *@
     </div>
 
     <div class="perfil-container">
         <h2>Nome </h2>
-        <span>@userModel.Nome</span>
+        @* <span>@userModel.Nome</span> *@
     </div>
 
     <div class="perfil-container">
         <h2>Idade </h2>
-        <span>@userModel.Idade</span>
+        @*  <span>@userModel.Idade</span> *@
     </div>
 
     <div class="perfil-container">
         <h2>CC </h2>
-        <span>@userModel.CC</span>
+        @*  <span>@userModel.CC</span> *@
     </div>
 
     <div class="perfil-container">
         <h2>Nif </h2>
-        <span>@userModel.Nif</span>
+        @*  <span>@userModel.Nif</span> *@
     </div>
 
     <div class="perfil-container">
         <h2>Telefone </h2>
-        <span>@userModel.Telefone</span>
+        @* <span>@userModel.Telefone</span> *@
     </div>
 
     <div class="perfil-container">
         <h2>Avaliação</h2>
-        <div class ="star-rating" data-rating="@userModel.AvaliacaoMedia.ToString("N1", System.Globalization.CultureInfo.InvariantCulture)">
-            <span class="star" data-value="1">&#9733;</span>
-            <span class="star" data-value="2">&#9733;</span>
-            <span class="star" data-value="3">&#9733;</span>
-            <span class="star" data-value="4">&#9733;</span>
-            <span class="star" data-value="5">&#9733;</span>
-        </div>
+        @*  <div class ="star-rating" data-rating="@userModel.AvaliacaoMedia.ToString("N1", System.Globalization.CultureInfo.InvariantCulture)"> *@
+        <span class="star" data-value="1">&#9733;</span>
+        <span class="star" data-value="2">&#9733;</span>
+        <span class="star" data-value="3">&#9733;</span>
+        <span class="star" data-value="4">&#9733;</span>
+        <span class="star" data-value="5">&#9733;</span>
+    </div>
 
-    </div> 
+    </div>
 </body>
 </html>

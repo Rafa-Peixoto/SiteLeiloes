@@ -2,32 +2,32 @@
 {
     public class Utilizador
     {
-        public int Id { get; internal set; }
-        public string Username { get; internal set; } = "";
-        public string Password { get; internal set; } = "";
-        public string Nome { get; internal set; } = "";
-        public int Idade { get; internal set; }
-        public string Email { get; internal set; } = "";
-        public string Telefone { get; internal set; } = "";
-        public string CC { get; internal set; } = "";
-        public string Nif { get; internal set; } = "";
-        public float Avaliacao_total { get; internal set; }
-        public int Nr_avaliacoes { get; internal set; }
+        public int Id { get; set; }
+        public string Username { get; set; } = "";
+        public string Email { get; set; } = "";
+        public string Password { get;  set; } = "";
+        //public string Nome { get; set; } = "";
+        //public int Idade { get; set; }
+        //public string Telefone { get; set; } = "";
+        //public string CC { get; set; } = "";
+        //public string Nif { get; set; } = "";
+        //public float Avaliacao_total { get; set; }
+        //public int Nr_avaliacoes { get; set; }
+        //public List<Licitacao>? Licitacoes { get; set; } = new List<Licitacao>();
 
-        public Utilizador(int id, string username, string password, string nome, int idade, string email, string telefone, string cc, string nif, float avaliacao_total, int nr_avaliacoes)
+        public Utilizador()
         {
-            Id = id;
-            Username = username;
-            Password = password;
-            Nome = nome;
-            Idade = idade;
-            Email = email;
-            Telefone = telefone;
-            CC = cc;
-            Nif = nif;
-            Avaliacao_total = avaliacao_total;
-            Nr_avaliacoes = nr_avaliacoes;
+            Username = string.Empty;
+            Email = string.Empty;
+            Password = string.Empty;
+            //Nome = string.Empty;
+            //Idade = 0;
+            //Telefone = string.Empty;
+            //CC = string.Empty;
+            //Nif = string.Empty;
+            //Avaliacao_total = 0.0f;
+            //Nr_avaliacoes = 0;
         }
-        public float AvaliacaoMedia => Nr_avaliacoes > 0 ? Avaliacao_total / Nr_avaliacoes : 0;
+        //public float AvaliacaoMedia => Nr_avaliacoes > 0 ? Avaliacao_total / Nr_avaliacoes : 0;
     }
 }

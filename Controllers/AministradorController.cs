@@ -74,7 +74,7 @@ namespace SiteLeiloes.Controllers
 
                 return NoContent();
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 return BadRequest();
             }

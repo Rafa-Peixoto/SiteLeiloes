@@ -22,7 +22,7 @@ namespace SiteLeiloes.Data.Components
         }
 
 
-        public Coworker GetById(int id)
+        public Coworker? GetById(int id)
         {
             return _context.Coworker.FirstOrDefault(c => c.Id == id);
         }

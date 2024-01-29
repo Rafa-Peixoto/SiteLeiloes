@@ -1,82 +1,103 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using SiteLeiloes.Data.Interfaces;
 using SiteLeiloes.Models;
+using System;
 using System.Collections.Generic;
-using System.Linq;
+using System.Threading.Tasks;
 
 namespace SiteLeiloes.Data.Components
 {
     public class LeilaoRepository : ILeilaoRepository
     {
         private readonly CarenseDBContext _context;
-        private IEnumerable<Leilao> _leilao = new List<Leilao>();
+
         public LeilaoRepository(CarenseDBContext context)
         {
-            // Inicialize sua lista de leiloes aqui, possivelmente carregando de um banco de dados
             _context = context;
         }
 
-        public IEnumerable<Leilao> GetAll()
+        public async Task<IEnumerable<Leilao>> GetAllAsync()
         {
-            return _context.Leilao.ToList();
+            return await _context.Leilao.ToListAsync();
         }
 
-
-        public Leilao GetById(int id)
+        public async Task<Leilao> GetByIdAsync(int id)
         {
-            return _context.Leilao.FirstOrDefault(c => c.Id == id);
+            return await _context.Leilao.FirstOrDefaultAsync(c => c.Id == id);
         }
 
-        public bool Create(Leilao leilao)
+        public async Task<bool> CreateAsync(Leilao leilao)
         {
             try
             {
-                _context.Leilao.Add(leilao);
+                await _context.Leilao.AddAsync(leilao);
+                await _context.SaveChangesAsync();
+                return true;
             }
             catch (Exception)
             {
+                // A exceção deve ser logada em um sistema de logs real
                 return false;
             }
-            return true;
-        }
-        public bool SaveChanges()
-        {
-            return (_context.SaveChanges() >= 0);
         }
 
-        public bool Update(Leilao leilao)
+        public async Task<bool> UpdateAsync(Leilao leilao)
         {
             try
             {
                 _context.Entry(leilao).State = EntityState.Modified;
-                return SaveChanges();
+                await _context.SaveChangesAsync();
+                return true;
             }
             catch (Exception)
             {
-                // Log the exception
+                // A exceção deve ser logada em um sistema de logs real
                 return false;
             }
         }
 
-        public bool Delete(int id)
+        public async Task<bool> DeleteAsync(int id)
         {
             try
             {
-                var leilao = _context.Leilao.FirstOrDefault(c => c.Id == id);
+                var leilao = await _context.Leilao.FindAsync(id);
                 if (leilao == null)
                 {
                     return false;
                 }
 
                 _context.Leilao.Remove(leilao);
-                return SaveChanges();
+                await _context.SaveChangesAsync();
+                return true;
             }
             catch (Exception)
             {
-                // Log the exception
+                // A exceção deve ser logada em um sistema de logs real
                 return false;
             }
         }
+
+        public async Task<bool> ExistsAsync(int id)
+        {
+            return await _context.Leilao.AnyAsync(c => c.Id == id);
+        }
+        public async Task<bool> SaveChangesAsync()
+        {
+            try
+            {
+                return (await _context.SaveChangesAsync()) >= 0;
+            }
+            catch (Exception)
+            {
+                // A exceção deve ser logada em um sistema de logs real
+                return false;
+            }
+        }
+        public async Task<Carro> GetCarroByIdAsync(int carroId)
+        {
+            return await _context.Carro.FirstOrDefaultAsync(c => c.Id == carroId);
+        }
+
     }
 }
 

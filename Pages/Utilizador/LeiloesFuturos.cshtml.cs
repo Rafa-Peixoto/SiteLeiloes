@@ -12,13 +12,13 @@ public class LeiloesFuturosModel : PageModel
 
     public void OnGet()
     {
-        Leiloes = new List<Leilao>
-        {
-            new Leilao(1, 500.00f,10, 600.00f,1,4, DateTime.Now.AddMinutes(30), DateTime.Now.AddHours(2), "/images/gtr.png"),
-            new Leilao(3, 700.00f,31, 750.00f,4,7, DateTime.Now.AddDays(1), DateTime.Now.AddDays(3), "/images/ferrari.png"),
-            new Leilao(2, 800.00f,11, 900.00f,3,7, DateTime.Now.AddHours(2), DateTime.Now.AddDays(1), "/images/jipe.png")
-        };
-        Leiloes = Leiloes.OrderBy(leilao => (leilao.Data_de_inicio - DateTime.Now)).ToList();
+        // Instancia a classe DataTeste
+        var dataTeste = new DataTeste();
+
+        // Atribui a lista de leilões do DataTeste para a propriedade Leiloes
+        Leiloes = dataTeste.Leiloes.
+            Where(leilao => DateTime.Now <= leilao.Data_de_inicio)
+            .ToList();
     }
 
 }

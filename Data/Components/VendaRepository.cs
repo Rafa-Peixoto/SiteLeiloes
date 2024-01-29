@@ -22,7 +22,7 @@ namespace SiteLeiloes.Data.Components
         }
 
 
-        public Venda GetById(int id)
+        public Venda? GetById(int id)
         {
             return _context.Venda.FirstOrDefault(c => c.Id == id);
         }

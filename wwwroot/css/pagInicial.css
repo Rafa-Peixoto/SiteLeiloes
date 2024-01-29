@@ -7,6 +7,7 @@
     overflow-x: hidden; /* Impede a rolagem horizontal */
 }
 
+
 .sidebar {
     background-image: url('/images/menu.png');
     background-size: 100% 100%; /* Isso vai esticar a imagem para cobrir toda a barra lateral */
@@ -20,23 +21,18 @@
     background-position: center center;
 }
 
-/*
-.sidebar {
-    background-image: url('/images/menu.png');
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 150px;
-    height: 100vh;  Usa a altura da janela de visualização 
-    z-index: 2;
-}*/
+.auction-details,
+.auction-name,
+.filters input[type="text"],
+.filters select,
+.filters button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+}
 
- 
+
 .menu-button {
-    width: 100%;  
-    height: calc(100vh / 7);  
+    width: 100%;
+    height: calc(100vh / 7);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -45,36 +41,20 @@
     .menu-button a {
         width: 100%;
         height: 100%;
-        display: block;   
+        display: block;
     }
 
 
 .auction-item {
     display: flex;
     align-items: center;
-    justify-content: flex-start;   
-    margin-bottom: 20px;
-    padding-left: 170px;   
-    box-sizing: border-box;
-}
-/*.auction-item {
-    display: flex;
-    align-items: center;
     justify-content: flex-start;
     margin-bottom: 20px;
-    padding-left: 120px;*/ /* Valor ajustado para aproximar as imagens da descrição */
-    /*box-sizing: border-box;
-}*/
+    padding-left: 170px;
+    box-sizing: border-box;
+    cursor: pointer; /* Muda o cursor para indicar que é clicável */
+}
 
-/*.auction-image {
-    margin-right: 50px;  
-    flex: 0 0 200px;*/ /* largura do contêiner da imagem */
-    /*height: 150px;*/ /* altura do contêiner da imagem */
-    /*display: flex; 
-    justify-content: center; 
-    align-items: center; 
-    overflow: hidden; 
-}*/
 .auction-image {
     margin-right: 20px; /* Valor ajustado se necessário para diminuir o espaço */
     flex: 0 0 200px; /* Mantém a largura fixa do contêiner da imagem */
@@ -85,59 +65,106 @@
     overflow: hidden;
 }
 
-.auction-image img {
-    max-width: 100%; 
-    max-height: 100%;
-    object-fit: contain; 
-}
+    .auction-image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
 
 .auction-details {
+    font-family: 'Helvetica', sans-serif;
     flex-grow: 1;
     text-align: left;
     margin-left: 20px;
 }
 
 .auction-name {
-    font-weight: bold;   
-}
- 
-/*@media (max-width: 768px) {
-    .sidebar {
-        width: 50px;  Reduz a largura da sidebar 
-        background-size: contain;  Garante que a imagem esteja completamente visível 
-    }
-
-    .auction-item {
-        justify-content: flex-start;
-        padding-left: 60px;  Espaçamento à esquerda ajustado para a sidebar reduzida 
-    }
-
-    .auction-image {
-        margin-right: 20px;  Ajusta a margem direita para telas pequenas 
-        max-width: 150px;  Largura máxima da imagem ajustada para telas pequenas 
-        max-height: 150px;  Altura máxima da imagem ajustada para telas pequenas 
-    }
-
-    .auction-details {
-        margin-left: 20px;  Espaçamento à esquerda nos detalhes 
-    }
+    font-family: 'Helvetica', sans-serif;
+    font-weight: bold;
 }
 
-@media (max-width: 500px) {
-    .auction-item {
-        flex-direction: column;
-        align-items: center;  Centraliza os itens na tela 
-        padding-left: 0;  Remove o espaçamento à esquerda 
+.auction-link {
+    display: block; /* Isso faz com que o link se comporte como um bloco, envolvendo todo o conteúdo */
+    color: inherit; /* Impede que o texto do link mude de cor */
+    text-decoration: none; /* Remove o sublinhado do link */
+}
+
+/* Estilos para o formulário de filtro */
+.filters {
+    display: flex;
+    justify-content: space-between; /* Espaço entre o input e o select */
+    align-items: center;
+    padding-right: 200px; /* Não encostar na borda da tela */
+    margin-left: 160px;
+    margin-right: 250px;
+    margin-top: 20px;
+    background: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /* Sombra suave para dar destaque */
+    box-sizing: border-box; /* Isso garante que o padding e border sejam incluídos na largura total */
+    max-width: calc(100% - 170px); /* Subtraia a largura da barra lateral e alguma margem extra */
+}
+
+}
+
+.filters input[type="text"], .filters select {
+    font-family: 'Helvetica', sans-serif;
+    padding: 10px;
+    border: 1px solid #ddd; /* Borda sutil */
+    border-radius: 4px;
+    font-size: 16px;
+    background: #f7f7f7; /* Fundo sutil para os campos de input */
+    flex-grow: 1; /* Ajuste ou remova esta propriedade se necessário */
+    max-width: none; /* Se você definiu uma largura máxima antes, remova ou ajuste */
+}
+
+.filters input[type="text"] {
+    font-family: 'Helvetica', sans-serif;
+    flex-grow: 1; /* Faz o input de texto ocupar o espaço disponível */
+    margin-right: 20px;
+}
+
+.filters select {
+    width: auto; /* Para não ocupar mais espaço que o necessário */
+    margin-right: 20px;
+}
+
+.filters button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #5cb85c; /* Um verde agradável que chama atenção para a ação */
+    color: #ffffff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-right: 20px; /* Ajuste conforme necessário */
+    margin-right: 0;
+}
+
+    .filters button:hover {
+        background-color: #4cae4c; /* Um tom mais escuro no hover */
     }
 
-    .auction-image {
-        max-width: 80%;  A imagem cresce para preencher mais espaço horizontal 
-        max-height: none;  Remove a restrição de altura máxima 
-        margin-bottom: 10px;  Espaço abaixo da imagem 
+/* Resposta para telas menores */
+@media (max-width: 768px) {
+    .filters {
+        flex-direction: column; /* Empilha os campos em dispositivos menores */
+        padding-left: 20px;
     }
 
-    .auction-details {
-        width: 90%;
-        margin: 0 auto;  Centraliza os detalhes 
-    }
-}*/
+        .filters input[type="text"], .filters select, .filters button {
+            font-family: 'Helvetica', sans-serif;
+            width: 100%;
+            margin-bottom: 10px; /* Espaço entre os campos quando empilhados */
+        }
+
+        .filters button {
+            width: auto; /* Ajuste para o botão ficar do tamanho do texto */
+        }
+}
+
+.not-comprador {
+    color: red;
+}

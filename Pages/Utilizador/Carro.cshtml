@@ -1,0 +1,55 @@
+﻿@page "/Carroo/{Id}"
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Leilões</title>
+    <link href="~/css/leilao.css" rel="stylesheet">
+    <link href="~/css/background.css" rel="stylesheet">
+    <!-- Adicione a referência para o seu arquivo JavaScript aqui -->
+    <script src="~/js/leilao.js" defer></script>
+</head>
+<body>
+    <img src="/images/logoPalavras.png" alt="Logo" id="logo">
+    <div class="sidebar">
+        <!-- Exemplo de botões de menu com links invisíveis -->
+        <div class="menu-button"><a href="/PagInicial/"></a></div>
+        <div class="menu-button"><a href="/PaginaUser/"></a></div>
+        <div class="menu-button"><a href="/PaginaGaragem/" /></a></div>
+        <div class="menu-button"><a href="/LicitacoesUser/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFavoritos/"></a></div>
+        <div class="menu-button"><a href="/LeiloesFuturos/"></a></div>
+        <div class="menu-button"><a href="/AtividadeUser/"></a></div>
+        <!-- Adicione mais botões conforme necessário -->
+    </div>
+    <div class="content">
+        <div class="header">
+            <h1>Porsche 911 - GASOLINA - CAIXA MANUAL - 231 HP - 153.000 KM</h1>
+        </div>
+        <div class="car-image">
+            <img src="/images/porsche911.jpg" alt="Porsche 911" />
+        </div>
+        <div class="auction-info">
+            <div class="current-bid">
+                <strong>CRIAR LEILÃO</strong>
+            </div>
+            <div class="details">
+                <span>03/1985</span>
+                <span>331 g/km</span>
+                <span>coupé</span>
+                <span>172 Kw(231hp)</span>
+            </div>
+            <div class="bid">
+                <input type="text" id="min-price" name="min-price" placeholder="Preço Mínimo" />
+                <input type="text" id="auction-time" name="auction-time" placeholder="Tempo de Leilão" />
+                <!-- Certifique-se de que o botão tenha o id correto -->
+                <button id="create-auction-button" type="button">CRIAR LEILÃO</button>
+            </div>
+        </div>
+    </div>
+    <!-- O script foi movido para o cabeçalho, mas você também pode colocá-lo aqui se preferir -->
+</body>
+</html>
+

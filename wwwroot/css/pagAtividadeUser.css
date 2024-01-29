@@ -1,1 +1,34 @@
-﻿
+﻿.auction-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+    padding-left: 170px;
+    box-sizing: border-box;
+}
+
+.auction-image {
+    margin-right: 20px; /* Valor ajustado se necessário para diminuir o espaço */
+    flex: 0 0 200px; /* Mantém a largura fixa do contêiner da imagem */
+    height: 150px; /* Mantém a altura fixa do contêiner da imagem */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+    .auction-image img {
+        max-width: 100%;
+        max-height: 100%;
+        object-fit: contain;
+    }
+
+.auction-details {
+    flex-grow: 1;
+    text-align: left;
+    margin-left: 20px;
+}
+
+.auction-name {
+    font-weight: bold;
+}

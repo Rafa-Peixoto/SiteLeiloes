@@ -10,6 +10,7 @@ namespace SiteLeiloes.Data.Interfaces
         bool Create(Utilizador utilizador);
         public bool Update(Utilizador utilizador);
         public bool Delete(int id);
+        public Utilizador GetByCredentials(string username, string password);
     }
 }
 

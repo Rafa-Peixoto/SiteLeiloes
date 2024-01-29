@@ -1,0 +1,130 @@
+﻿#container {
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+    align-items: flex-start;
+}
+
+.content {
+    margin-left: 200px; /* Ajuste conforme necessário para alinhar à esquerda */
+    padding: 20px;
+    width: calc(100% - 50px);
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.header h1 {
+    font-size: 20px; /* Reduzido para se adequar à largura da imagem */
+    color: #333;
+    width: 600px; /* Definido para a mesma largura da imagem e detalhes */
+    text-align: center;
+    margin: 0 auto; /* Isso centraliza o título se for menor que a largura total */
+    margin-bottom: 5px;
+}
+
+.car-image {
+    width: 640px; /* Ajuste a largura da imagem e dos detalhes */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5px;
+}
+
+    .car-image img {
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+.auction-info {
+    background-color: #f1f1f1;
+    padding: 20px;
+    margin-top: 20px;
+    width: 600px; /* A mesma largura que a imagem para alinhamento */
+}
+
+.current-bid span,
+.current-bid strong {
+    display: block;
+    text-align: center;
+    font-size: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 600px; /* A mesma largura que a imagem para alinhamento */
+    box-sizing: border-box;
+    margin-top: 10px; /* Ajuste o espaçamento conforme necessário */
+}
+
+    .details span {
+        margin-right: 15px;
+    }
+
+    .details .last-bid-label { /* Assumindo que você tenha uma classe para o rótulo "Última licitação" */
+        display: block; /* Faz o texto se comportar como um bloco para poder ter margens */
+        margin-bottom: 10px; /* Adiciona espaço abaixo do rótulo "Última licitação" */
+    }
+
+.bid {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    width: 600px; /* A mesma largura que a imagem para alinhamento */
+}
+
+    .bid input {
+        margin-right: 10px;
+        padding: 10px;
+        font-size: 16px;
+        flex-grow: 1; /* Faz o input expandir para preencher o espaço disponível */
+    }
+
+    .bid button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+    .bid label {
+        margin-right: 15px; /* Adiciona espaço à direita do rótulo */
+        font-weight: bold; /* Torna o texto em negrito */
+    }
+
+.auction-timer {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    width: 600px; /* A mesma largura que a imagem para alinhamento */
+}
+
+.create-auction {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #f1f1f1;
+    margin-top: 20px;
+}
+
+    .create-auction input {
+        margin-bottom: 10px;
+        padding: 10px;
+        font-size: 16px;
+        border: 1px solid #ccc;
+    }
+
+    .create-auction button {
+        padding: 10px 20px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        cursor: pointer;
+    }
+
+/* Se você tiver mais estilos específicos para outras partes da página, adicione-os aqui */
