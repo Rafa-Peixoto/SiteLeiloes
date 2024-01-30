@@ -1,0 +1,20 @@
+﻿@page "/AdicionarCarro"
+@model AdicionarCarroModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Adicionar Carro</title>
+</head>
+<body>
+    <form method="post">
+        <input type="text" asp-for="NovoCarro.Marca" placeholder="Marca" />
+        <input type="text" asp-for="NovoCarro.Modelo" placeholder="Modelo" />
+        <input type="number" asp-for="NovoCarro.Ano" placeholder="Ano" />
+        <input type="number" asp-for="NovoCarro.Km" placeholder="Kilometragem" />
+        <input type="text" asp-for="NovoCarro.Condicao" placeholder="Condição" />
+        <input type="text" asp-for="NovoCarro.ImagemUrl" placeholder="URL da Imagem" />
+        <button type="submit">Adicionar Carro</button>
+    </form>
+</body>
+</html>

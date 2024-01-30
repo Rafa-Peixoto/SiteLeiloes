@@ -30,6 +30,7 @@ namespace SiteLeiloes.Data.Components
             try
             {
                 _context.Carro.Add(carro);
+                _context.SaveChanges();
             }
             catch (Exception)
             {

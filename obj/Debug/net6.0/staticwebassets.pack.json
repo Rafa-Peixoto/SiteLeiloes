@@ -73,6 +73,14 @@
       "PackagePath": "staticwebassets\\images\\gtr.png"
     },
     {
+      "Id": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\icone+.jpg",
+      "PackagePath": "staticwebassets\\images\\icone+.jpg"
+    },
+    {
+      "Id": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\icone+.png",
+      "PackagePath": "staticwebassets\\images\\icone+.png"
+    },
+    {
       "Id": "C:\\university\\3ano\\labinf4\\SiteLeiloes\\SiteLeiloes\\SiteLeiloes\\wwwroot\\images\\jipe.png",
       "PackagePath": "staticwebassets\\images\\jipe.png"
     },

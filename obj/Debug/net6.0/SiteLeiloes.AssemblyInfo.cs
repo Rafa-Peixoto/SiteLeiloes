@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SiteLeiloes")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b20756bc2b844f5d08936f5f9709fa206d93dd55")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e73f65ba604608813302ecddf0bcb0135b7c2bf3")]
 [assembly: System.Reflection.AssemblyProductAttribute("SiteLeiloes")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SiteLeiloes")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

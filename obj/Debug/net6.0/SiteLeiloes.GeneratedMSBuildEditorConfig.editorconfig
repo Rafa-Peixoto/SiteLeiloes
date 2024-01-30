@@ -18,6 +18,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\university\3ano\labinf4\SiteLeiloes\SiteLeiloes\SiteLeiloes
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/AdicionarCarroModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxBZGljaW9uYXJDYXJyb01vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/university/3ano/labinf4/SiteLeiloes/SiteLeiloes/SiteLeiloes/Pages/Utilizador/AtividadeUser.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXRpbGl6YWRvclxBdGl2aWRhZGVVc2VyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
